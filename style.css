@@ -49,6 +49,7 @@
     align-items: center;
     gap: 10px;
     padding: 8px 0;
+    cursor: pointer;
 }
 
 .menu-two ul {
@@ -57,6 +58,7 @@
     list-style: none;
     padding: 0;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .menu-two li {
@@ -105,10 +107,11 @@
 .search img {
     width: 25px;
     height: 25px;
+    cursor: pointer;
 }
 
 .search-bar {
-    width: 600px;
+    width: 480px;
     height: 20px;
     background-color: #DDE5B6;
     border: solid #DDE5B6;
@@ -117,7 +120,7 @@
 
 .user-corner {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     align-items: center;
     justify-content: end;
     margin-right: 80px;
@@ -126,6 +129,7 @@
 .notification {
     width: 30px;
     height: 30px;
+    cursor: pointer;
 }
 
 .user-picture {
@@ -173,6 +177,7 @@ button {
     border: solid #6C584C;
     border-radius: 20px;
     color: white;
+    cursor: pointer;
 }
 
 .body {
@@ -184,6 +189,8 @@ button {
 .body .projects {
     display: grid;
     grid-template-rows: 20px 5fr;
+    padding: 20px;
+    margin-top: 10px;
 }
 
 .projects .project-names {
@@ -191,6 +198,7 @@ button {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     gap: 1em;
+    margin-top: 10px;
 }
 
 .super-cool, 
@@ -199,14 +207,33 @@ button {
 .easy-peasy-app,
 .ad-blocker,
 .money-maker {
-    background-color: blueviolet;
-    border-color: blueviolet;
-    border-style: solid;
+    display: flex;
+    background-color: #F0EAD2;
+    border-radius: 10px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 0 2px #F0EAD2;
+    padding-left: 25px;
+    padding-top: 20px;
 }
 
 .body .announcements-trending {
     display: grid;
     grid-template-rows: 1fr 1fr;
+}
+
+.project-corner {
+    background-color: #ADC178;
+    width: 12px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: 0;
+    padding: 0;
 }
 
 .announcements {
