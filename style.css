@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: pink;
+    border-color: pink;
+    border-style: solid;
+}
+
+.container .main {
+    background-color: red;
+    border-color: red;
+    border-style: solid;
+}
+
+.container .sidebar {
+    display: grid;
+    grid-template-rows: 1fr 2fr 5fr;
+    background-color: blue;
+    border-color: blue;
+    border-style: solid;
+}
+
+.sidebar .menu-one {
+    justify-content: start;
+}
+
+.sidebar .menu-two {
+    justify-content: start;
+}
+
+.menu-one ul {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    background-color: green;
+    border-color: green;
+    border-style: solid;
+}
+
+.menu-two ul {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    background-color: yellow;
+    border-color: yellow;
+    border-style: solid;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+.header {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.header .first-row {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr 2fr;
+}
+
+.header .second-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.buttons {
+    display: flex;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.body .projects {
+    display: grid;
+    grid-template-rows: 20px 5fr;
+}
+
+.projects .project-names {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.super-cool, 
+.less-cool,
+.impossible-app,
+.easy-peasy-app,
+.ad-blocker,
+.money-maker {
+    background-color: blueviolet;
+    border-color: blueviolet;
+    border-style: solid;
+}
+
+.body .announcements-trending {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.announcements {
+    display: grid;
+    background-color: orange;
+    border-color: orange;
+    grid-template-rows: 20px 1fr;
+}
+
+.announcement {
+    display: flex;
+    flex-direction: column;
+}
+
+.body .trending {
+    display: grid;
+    grid-template-rows: 20px 1fr;
+    background-color: dodgerblue;
+    border-color: dodgerblue;
+}
+
+.accounts {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1em;
+}
+
+.account {
+    display: flex;
+}
