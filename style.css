@@ -89,15 +89,14 @@
 
 .header {
     display: grid;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: auto auto;
     background-color: #F0EAD2;
-    height: 180px;
 }
 
 .header .first-row {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .search {
@@ -115,12 +114,12 @@
 }
 
 .search-bar {
-    width: 100%;
-    max-width: 1600px;
-    height: 20px;
     background-color: #DDE5B6;
     border: solid #DDE5B6;
     border-radius: 10px;
+    height: 20px;
+    flex-grow: 1;
+    border-radius: px;
 }
 
 .user-corner {
@@ -159,8 +158,8 @@
 .profile-info {
     display: grid;
     grid-template-columns: 85px 2fr;
-    padding: 10px;
-    margin-left: 40px;
+    padding: 5px;
+    margin-left: 20px;
 }
 
 .profile-text {
@@ -176,7 +175,7 @@
 }
 
 .buttons {
-    margin-top: 30px;
+    margin-top: 15px;
     display: flex;
     justify-content: end;
     gap: 40px;
@@ -280,13 +279,15 @@ button {
 }
 
 .announcement {
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     background-color: #F0EAD2;
     border-radius: 10px;
     gap: 20px;
     padding: 30px;
-    max-width: 300px; /* OGRANIČI širinu teksta */
+    max-width: 300px;
 }
 
 hr {
@@ -295,6 +296,9 @@ hr {
     border: 1px solid #6C584C;
 }
 
+.tab-names {
+    font-size: 20px;
+}
 
 .announcement-text {
     font-weight: 500;
@@ -309,9 +313,25 @@ hr {
 .accounts {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
-    gap: 1em;
+    margin-top: 5px;
+    background-color: #F0EAD2;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    min-width: 322px;
+}
+
+.profile-icon {
+    width: 60px;
+    height: 60px;
 }
 
 .account {
     display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.account p {
+    font-weight: 500;
 }
