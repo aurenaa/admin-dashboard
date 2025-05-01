@@ -269,23 +269,41 @@ button {
     margin-top: 10px;
 }
 
+.body .announcements-trending {
+    padding: 20px;
+    margin-top: 10px;
+}
+
 .announcements {
     display: grid;
-    background-color: orange;
-    border-color: orange;
     grid-template-rows: 20px 1fr;
 }
 
 .announcement {
     display: flex;
     flex-direction: column;
+    background-color: #F0EAD2;
+    border-radius: 10px;
+    gap: 20px;
+    padding: 30px;
+    max-width: 300px; /* OGRANIČI širinu teksta */
+}
+
+hr {
+    border: none;
+    margin: 10px 0;
+    border: 1px solid #6C584C;
+}
+
+
+.announcement-text {
+    font-weight: 500;
+    color: #6C584C;
 }
 
 .body .trending {
     display: grid;
     grid-template-rows: 20px 1fr;
-    background-color: dodgerblue;
-    border-color: dodgerblue;
 }
 
 .accounts {
